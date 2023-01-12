@@ -1,0 +1,11 @@
+1. Adott nevek tömbb. nevek=["Kati", "Peti", "Zoli", "Joli"]
+Vizsgáld meg, hogy van-e benne "Sanyi" név, ha nincs fűzd a tömbb legelejére.
+
+2. Adott egy tömb szamok=[3,6,10,88,32]. Az eredeti tömböt változatlanul hagyva legyen egy szamok2 tömböd, amiben a számok kétszeresét tedd bele.
+
+3. A szamok2 tömbből szűrd ki a 100 alatti számokat egy kicsi tömbbe a 100 felettieket a nagy tömbbe.
+
+4. Adott str="5,1,8,-4,0,-5,6,10,-1"
+Hozz létre egy objektumot, benne 3 kulcsot: pozitív, negatív, nulla. Mindegyik kulcs tömb típusú értéket tartalmaz.
+
+A kapott str-ből számmá alakítás után az objektum megfelelő kulcsához rendeld az értékeket.
