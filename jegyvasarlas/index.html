@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jegyvásárlás</title>
+</head>
+<body>
+    <label for="fjegy">Felnőtt jegyek: </label>
+    <input type="number" name="fjegy" id="fjegy"><br><br>
+    <label for="djegy">Diák jegyek: </label>
+    <input type="number" name="djegy" id="djegy"><br><br>
+    <label for="ulo">Ülő: </label>
+    <input type="radio" name="tipus" id="ulo">
+    <label for="allo">Álló: </label>
+    <input type="radio" name="tipus" id="allo">
+    <p id="kiir"></p>
+    <button onclick="osszegszamolas()" type="button">Számolás</button>
+    <script src="index.js"></script>
+</body>
+</html>
