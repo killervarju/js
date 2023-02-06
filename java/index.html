@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java feladatok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Java fileból beolvasás feladat</h1>
+    <div class="menusor"></div>
+        <nav>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">Java tananyag</a></li>
+                <li><a href="./gyakorlo.html">Gyakorló feladatok</a></li>
+                <li><a href="./index.html">Ellenőrző feladatok</a></li>
+            </ul>
+        </nav>
+
+    <div class="feladat1">
+        <code>
+        <pre>
+        public class txtbeolvasas { 
+            public static List<String> nevek;
+            public static void main(String[] args) { 
+                getData();
+                System.out.println(nevek);
+            } 
+            public static void <span id="feladat1">???</span>() {
+                try {
+                    nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.defaultCharset());
+                    //nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.forName("UTF-8"));
+                } catch (IOException e) {
+                    System.out.println("Hiba");
+                }
+            }
+        
+        }</pre>
+    </code>
+
+        <div>
+            <h3>1. feladat: </h3>
+            <p>??? helyére mit kell beírni?</p>
+            <label for="f1">Kérem a helyes választ:</label>
+            <input type="text" name="f1" id="f1">
+
+            <button onclick="Megoldas1()">1. feladat ellenőrzése</button>
+
+            <button id="btn2">1.feladat másképpen addEventListener</button>
+
+        </div>
+    </div>
+    <div class="feladat2">
+        <div>
+            <h3>2.feladat</h3>
+            <p>A fenti kód csak sort olvassa be a textből?</p>
+            <input type="radio" name="2feladat" id="igaz">
+            <label for="">Igaz</label><br>
+            <input type="radio" name="2feladat" id="hamis">
+            <label for="">Hamis</label><br>
+            <input type="button" onclick="Megoldas2()"  value="Ellenőrzés">
+            <p id="masodikkir"></p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

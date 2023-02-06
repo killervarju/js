@@ -1,0 +1,26 @@
+h1{
+    background-color: chocolate;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+}
+
+nav ul{
+    list-style: none;
+    padding: 15px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+}
+
+nav{
+    background-color: coral;
+}
+
+.tartalom{
+    display: flex;
+}
