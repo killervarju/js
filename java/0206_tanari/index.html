@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java feladatok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Java fileból beolvasás feladat</h1>
+    <div class="menusor">
+        <nav>
+            <ul>
+                <li> <a href="https://www.w3schools.com/java/" target="_blank">Java tananyag</a> </li>
+                <li> <a href="./gyakorlo.html">Gyakorló feladatok</a> </li>
+                <li> <a href="./index.html">Ellenőrző feladatok</a> </li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <div class="feladat1">
+        <code>
+        <pre>
+        public class txtbeolvasas { 
+            public static List<String> nevek;
+            public static void main(String[] args) { 
+                getData();
+                System.out.println(nevek);
+            } 
+            public static void <span id="feladat1">???</span>() {
+                try {
+                    nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.defaultCharset());
+                    //nevek = Files.readAllLines(Paths.get("nevek.txt"), Charset.forName("UTF-8"));
+                } catch (IOException e) {
+                    System.out.println("Hiba");
+                }
+            }
+        
+        }</pre>
+    </code>
+
+        <div>
+            <h3>1. feladat: </h3>
+            <p>??? helyére mit kell beírni?</p>
+            <label for="f1">Kérem a helyes választ:</label>
+            <input type="text" name="f1" id="f1">
+
+            <button onclick="Megoldas1()">1. feladat ellenőrzése</button>
+
+            <button id="btn2">1.feladat másképpen addEventListener</button>
+
+        </div>
+    </div>
+
+    <div class="feladat2">
+        <h2>2. feladat</h2>
+        <div>
+            <p>A fenti kód csak az első sort olvassa be a txt-ből?</p>
+            <div>
+            <input type="radio" name="f2" id="igaz">
+            <label for="igaz">Igaz</label>
+            </div>
+            <div>
+            <input type="radio" name="f2" id="hamis">
+            <label for="hamis">Hamis</label>
+            </div>
+        </div>
+        <div><button id="btn3">Megoldás</button>
+        </div>
+        <div>
+            <p id="f2kiir"></p>
+        </div>
+
+    </div>
+
+
+    <div class="feladat3">
+        <h2>3.feladat</h2>
+        <p>Melyik nem programozási nyelv?</p>
+        <select name="prog" id="prog">
+            <option value="">----Válassz!----</option>
+            <option value="java">Java</option>
+            <option value="html">Html</option>
+            <option value="python">Python</option>
+            <option value="c#">C#</option>
+
+        </select>
+
+        <div>
+            <button id="btn4">Lássuk jól választottál-e</button>
+        </div>
+        <div>
+            <p id="f3kiir"></p>
+        </div>
+
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

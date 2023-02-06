@@ -1,0 +1,31 @@
+h1{
+    background-color: chocolate;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.menusor a{
+    text-decoration: none;
+}
+.menusor{
+    background-color: aqua;
+    padding: 20px;;
+}
+body{
+    margin: 50px 30px 80px 30px;
+}
+
+.tartalom{
+    display: flex;
+}
